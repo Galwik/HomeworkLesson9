@@ -5,14 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
 public class AccordionTest extends TestBase {
-
-    private static final Logger log = LoggerFactory.getLogger(AccordionTest.class);
     private static final String path = "https://seleniumui.moderntester.pl/accordion.php";
 
     @Test

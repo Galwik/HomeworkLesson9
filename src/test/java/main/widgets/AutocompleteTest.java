@@ -4,8 +4,6 @@ import driver.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Random;
@@ -13,7 +11,6 @@ import java.util.Random;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class AutocompleteTest extends TestBase {
-    private static final Logger log = LoggerFactory.getLogger(AccordionTest.class);
     private static final String path = "https://seleniumui.moderntester.pl/autocomplete.php";
 
     @Test
