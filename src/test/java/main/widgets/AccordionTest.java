@@ -3,24 +3,19 @@ package main.widgets;
 import driver.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.time.Duration;
+public class AccordionTest extends TestBase {
 
-public class Accordion extends TestBase {
-
-    private static final Logger log = LoggerFactory.getLogger(Accordion.class);
+    private static final Logger log = LoggerFactory.getLogger(AccordionTest.class);
     private static final String path = "https://seleniumui.moderntester.pl/accordion.php";
 
     @Test
-    void automationPraticeAccordion() throws InterruptedException {
+    void automationPracticeAccordion() throws InterruptedException {
         driver.get(path);
 
-        System.out.println(driver.findElement(By.cssSelector("#ui-id-2 p")).getText());
+        System.out.println(driver.findElement(By.cssSelector("#ui-id-1")).getText());
         System.out.println();
 
         driver.findElement(By.cssSelector("#ui-id-3")).click();
