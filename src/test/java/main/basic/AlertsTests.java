@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class AlertsTests extends TestBase {
@@ -59,13 +61,11 @@ public class AlertsTests extends TestBase {
         driver.get(path);
         WebElement delayedAlertButton = driver.findElement(By.cssSelector("#delayed-alert"));
         delayedAlertButton.click();
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.alertIsPresent());
         driver.switchTo().alert().accept();
         assertThat("Incorrect text", driver.findElement(By.cssSelector("#delayed-alert-label"))
                 .getText().equals("OK button pressed"));
         log.info(">>>>>  Delayed Alert");
     }
-
-
 }

@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 public class TestBase {
     private static Logger logger = LoggerFactory.getLogger("TestDriver.class");
-    public static WebDriver driver;
+    public WebDriver driver;
 
 
     @BeforeAll

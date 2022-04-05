@@ -44,10 +44,10 @@ public class FormTest extends TestBase {
         List<WebElement> continents = driver.findElements(By.cssSelector("#selectContinents :not([value=''])"));
         continents.get(new Random().nextInt(continents.size())).click();
 
-        WebElement seleniumCommand1 = driver.findElement(By.cssSelector("[value='switch-commands']"));
-        WebElement seleniumCommand2 = driver.findElement(By.cssSelector("[value='wait-commands']"));
+        WebElement seleniumSwitchCommand = driver.findElement(By.cssSelector("[value='switch-commands']"));
+        WebElement seleniumWaitCommand = driver.findElement(By.cssSelector("[value='wait-commands']"));
         Actions action = new Actions(driver);
-        action.keyDown(Keys.CONTROL).click(seleniumCommand1).click(seleniumCommand2).build().perform();
+        action.keyDown(Keys.CONTROL).click(seleniumSwitchCommand).click(seleniumWaitCommand).build().perform();
 
         File fileToUpload = new File("src/main/resources/fileToUpload");
         WebElement uploadFile = driver.findElement(By.cssSelector("#chooseFile"));
