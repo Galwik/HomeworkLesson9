@@ -17,13 +17,13 @@ public class DraggableTest extends TestBase {
 
         Actions action = new Actions(driver);
         Thread.sleep(500);
-        action.dragAndDropBy(object, 1000, -100).build().perform();
+        action.dragAndDropBy(object, 1000, -100).perform();
         Thread.sleep(500);
-        action.dragAndDropBy(object, 0, 600).build().perform();
+        action.dragAndDropBy(object, 0, 600).perform();
         Thread.sleep(500);
-        action.dragAndDropBy(object, -750, -350).build().perform();
+        action.dragAndDropBy(object, -750, -350).perform();
         Thread.sleep(500);
-        action.dragAndDropBy(object, -750, 350).build().perform();
+        action.dragAndDropBy(object, -750, 350).perform();
         Thread.sleep(500);
     }
 }

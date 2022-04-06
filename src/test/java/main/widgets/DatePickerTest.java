@@ -7,7 +7,7 @@ public class DatePickerTest extends TestBase {
     private static final String path = "https://seleniumui.moderntester.pl/autocomplete.php";
 
     @Test
-    void automationPracticeAutocomplete() {
+    void automationPracticeDatePicker() {
 
     }
 }
