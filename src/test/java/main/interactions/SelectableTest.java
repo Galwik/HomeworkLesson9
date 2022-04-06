@@ -15,7 +15,7 @@ public class SelectableTest extends TestBase {
     private static final String path = "https://seleniumui.moderntester.pl/selectable.php";
 
     @Test
-    void automationPracticeDraggable() {
+    void automationPracticeSelectable() {
         driver.get(path);
 
         List<WebElement> items = driver.findElements(By.cssSelector("#selectable li"));

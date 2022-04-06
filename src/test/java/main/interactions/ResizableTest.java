@@ -12,7 +12,7 @@ public class ResizableTest extends TestBase {
     private static final String path = "https://seleniumui.moderntester.pl/resizable.php";
 
     @Test
-    void automationPracticeDraggable() throws InterruptedException {
+    void automationPracticeResizable() throws InterruptedException {
         driver.get(path);
 
         WebElement object = driver.findElement(By.cssSelector("#resizable"));
