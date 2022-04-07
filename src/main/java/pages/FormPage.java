@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +12,7 @@ import java.util.List;
 import java.util.Random;
 
 public class FormPage {
-    public FormPage(WebDriver driver){
+    public FormPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
@@ -87,26 +86,19 @@ public class FormPage {
         this.continents.get(new Random().nextInt(continents.size())).click();
     }
 
-    public void setSwitchAndWaitSeleniumCommand(WebDriver driver){
+    public void setSwitchAndWaitSeleniumCommand(WebDriver driver) {
         Actions action = new Actions(driver);
         action.keyDown(Keys.CONTROL).click(seleniumSwitchCommand).click(seleniumWaitCommand).build().perform();
     }
 
-    public void uploadFile(String path){
+    public void uploadFile(String path) {
         File fileToUpload = new File(path);
         this.fileUploader.sendKeys(fileToUpload.getAbsolutePath());
     }
 
-    public void signIn(){
+    public void signIn() {
         signInButton.click();
     }
-
-
-
-
-
-
-
 
 
 }
