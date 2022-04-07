@@ -24,10 +24,10 @@ public class TablesTest extends TestBase {
             String state = elements.get(2).getText();
             String height = elements.get(3).getText();
 
-            if (state.contains("Switzerland") && Integer.parseInt(height) > 4000){
+            if (state.contains("Switzerland") && Integer.parseInt(height) > 4000) {
                 System.out.println("Rank: " + rank + "\n"
-                 + "Peak: " + peak + "\n"
-                + "Mountain range: " + mountainRange + "\n");
+                        + "Peak: " + peak + "\n"
+                        + "Mountain range: " + mountainRange + "\n");
             }
         }
     }
